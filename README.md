@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# rep-coach
 
-## Getting Started
+筋トレ記録 + AI セット提案アプリの個人学習プロジェクト。
+**現在は開発を停止しています**(下記「ステータス」参照)。
 
-First, run the development server:
+## ステータス
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- 状態: ⏸️ Paused / Archived
+- 停止理由: 共同開発の新プロジェクト `move-mate` (健康維持アプリ) への移行
+- 移行先: [move-mate](https://github.com/TakedaShinnosuke/move-mate) ※リポジトリ作成後に URL を更新
+- 達成済み: 開発環境構築 (WSL2 + Node.js + Claude Code + Git/GitHub + Docker)、Next.js 15 プロジェクトの初期化、GitHub 連携
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 当初の構想
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| 項目 | 内容 |
+|---|---|
+| ジャンル | 筋トレ記録 + AI 提案 |
+| 想定スタック | Next.js 15 (App Router) + TypeScript + Tailwind CSS + Prisma + PostgreSQL (Docker) + Anthropic Claude API |
+| 差別化軸 | 過去履歴をもとに Claude API が次回のセット (重量・回数) を提案する機能 |
+| デプロイ | Vercel + Supabase (予定だった) |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 学んだこと
 
-## Learn More
+- WSL2 上での Node.js / npm の運用
+- Next.js プロジェクトの初期化 (`create-next-app`、App Router、Turbopack、AGENTS.md)
+- Git/GitHub の SSH 鍵設定、リモート連携
+- Docker による PostgreSQL コンテナ運用の準備
+- `.env` / `.gitignore` の使い分けによるシークレット管理
 
-To learn more about Next.js, take a look at the following resources:
+## ライセンス
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+未設定 (個人学習用)。
